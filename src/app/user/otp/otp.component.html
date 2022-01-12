@@ -1,0 +1,30 @@
+<div class="container">
+    <div class="box">
+        <div class="heading"></div>
+        <form action="" [formGroup]="otpForm">
+
+            <div class="form-group ">
+                <!-- <label for="staticEmail2" class="sr-only ">Email</label> -->
+                <input type="number" formControlName="Otp" class="form-control mb-2" placeholder="Enter OTP" id="otp" value="">
+            </div>
+            <button class="login-button" title="login" (click)="onSubmit()">Confirm</button>
+
+        </form>
+    </div>
+    <!-- <div class="card">
+        <div class="card-header">
+            Otp Confirmation
+        </div>
+        <div class="card-body">
+            <form action="" [formGroup]="otpForm">
+               
+                        <div class="form-group mb-2 row">
+                            <label for="otp" class="sr-only col">OTP</label>
+                            <input type="number" formControlName="Otp" class="form-control col" id="otp" value="">
+                          </div>
+                    <button type="submit" class="btn btn-primary mb-2" (click)="onSubmit()">Confirm</button>
+                
+            </form>
+        </div>
+    </div> -->
+</div>

@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="box">
+        <div class="heading"></div>
+        <form action="" [formGroup]="registerForm">
+
+            <div class="form-group ">
+                <!-- <label for="staticEmail2" class="sr-only ">Email</label> -->
+                <input type="text" formControlName="email" class="form-control mb-2" placeholder="Email" id="staticEmail2" value="">
+            </div>
+            <button class="login-button" title="login" (click)="onSubmit()">Sign Up</button>
+            <div class="separator">
+                <div class="line"></div>
+                <p>OR</p>
+                <div class="line"></div>
+            </div>
+            <!-- <div class="other">
+                <button class="fb-login-btn" type="button">
+                    <i class="fa fa-facebook-official fb-icon"></i>
+                    <span class="">Log in with Facebook</span>
+                </button>
+                <a class="forgot-password" href="#">Forgot password?</a>
+            </div> -->
+            <p style="text-align: center;">have an account? <a class="signup" routerLink="/login">Sign In</a></p>
+        </form>
+    </div>
+   
+</div>

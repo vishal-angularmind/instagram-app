@@ -1,0 +1,33 @@
+<div class="container">
+   
+        <div class="box">
+            <div class="heading"></div>
+            <form class="login-form mb-2"  [formGroup]="loginForm">
+                <div class="form-group mb-2 ">
+                    <!-- <label for="email" class="sr-only col">Email</label> -->
+                    <input type="text" formControlName="email" class="form-control"  placeholder="Email" id="email" value="">
+                </div>
+
+                <div class="form-group mb-2 ">
+                    <!-- <label for="password" class="sr-only col">Password</label> -->
+                    <input type="text" formControlName="password"  class="form-control " id="password" value="" placeholder="Password">
+                </div>
+                <button class="login-button" title="login" (click)="onSubmit()">Log In</button>
+                <div class="separator">
+                    <div class="line"></div>
+                    <p>OR</p>
+                    <div class="line"></div>
+                </div>
+                <!-- <div class="other">
+                    <button class="fb-login-btn" type="button">
+                        <i class="fa fa-facebook-official fb-icon"></i>
+                        <span class="">Log in with Facebook</span>
+                    </button>
+                    <a class="forgot-password" href="#">Forgot password?</a>
+                </div> -->
+                <p style="text-align: center;">Don't have an account? <a class="signup" routerLink="/register">Sign Up</a></p>
+            </form>
+        </div>
+       
+  
+</div>
